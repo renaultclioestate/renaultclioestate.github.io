@@ -8,24 +8,20 @@
   <meta name="author" content="Your Blog Name">
   <meta name="robots" content="index, follow">
   <meta name="canonical" content="https://yourwebsite.com">
-  <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Car Insurance for Renault Clio Estate in France">
   <meta property="og:description" content="Get tailored car insurance for your Renault Clio Estate in France. Compare affordable quotes and save!">
   <meta property="og:image" content="https://yourwebsite.com/images/renault-clio-estate-logo.png">
   <meta property="og:url" content="https://yourwebsite.com">
   <meta property="og:type" content="website">
-  <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Car Insurance for Renault Clio Estate in France">
   <meta name="twitter:description" content="Find the best car insurance for your Renault Clio Estate in France. Affordable rates and comprehensive coverage.">
   <meta name="twitter:image" content="https://yourwebsite.com/images/renault-clio-estate-logo.png">
-  <!-- Preload Critical Resources -->
   <link rel="preload" href="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" as="image">
   <link rel="dns-prefetch" href="https://www.acommeassure.fr">
   <link rel="dns-prefetch" href="https://www.service-public.fr">
   <title>Car Insurance for Renault Clio Estate in France</title>
   <link rel="icon" type="image/png" href="https://yourwebsite.com/favicon.png">
-  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,6 +56,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       background-color: var(--white);
+      font-display: swap;
     }
     .container {
       max-width: 1200px;
@@ -73,10 +70,12 @@
       top: 0;
       z-index: 100;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 64px;
     }
     .header img {
       width: 48px;
       height: 48px;
+      aspect-ratio: 1/1;
     }
     .header h1 {
       font-size: 1.5rem;
@@ -112,6 +111,7 @@
     .hero img {
       width: 96px;
       height: 96px;
+      aspect-ratio: 1/1;
       margin-bottom: 1rem;
     }
     .hero h2 {
@@ -142,6 +142,8 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s;
       min-height: 150px;
+      width: 100%;
+      box-sizing: border-box;
     }
     .card:hover {
       transform: translateY(-5px);
@@ -156,6 +158,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       margin-top: 0.25rem;
+      box-sizing: border-box;
     }
     .form-input:focus {
       outline: none;
@@ -172,12 +175,14 @@
     .carousel-item {
       flex: 0 0 300px;
       scroll-snap-align: start;
+      min-height: 200px;
     }
     footer {
       background-color: var(--renault-blue);
       color: var(--white);
       padding: 1rem 0;
       text-align: center;
+      min-height: 60px;
     }
     footer a {
       color: var(--renault-yellow);
@@ -353,32 +358,47 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded',() => {
-      // Smooth Scroll
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click',e => {
+    document.addEventListener('DOMContentLoaded', () => {
+      // Cache DOM elements
+      const navLinks = document.querySelectorAll('.nav-link');
+      const submitBtn = document.getElementById('submit-btn');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const carModelInput = document.getElementById('car-model');
+      const carousel = document.getElementById('blog-carousel');
+
+      // Smooth Scroll with Debouncing
+      let scrollTimeout;
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
           e.preventDefault();
-          document.getElementById(link.getAttribute('href').substring(1)).scrollIntoView({behavior:'smooth'});
+          clearTimeout(scrollTimeout);
+          scrollTimeout = setTimeout(() => {
+            document.getElementById(link.getAttribute('href').substring(1)).scrollIntoView({ behavior: 'smooth' });
+          }, 100);
         });
       });
+
       // Form Validation
-      document.getElementById('submit-btn').addEventListener('click',() => {
-        const name=document.getElementById('name').value.trim();
-        const email=document.getElementById('email').value;
-        const carModel=document.getElementById('car-model').value.trim();
-        if(!name){alert('Please enter your name.');return;}
-        if(!email.includes('@')||!email.includes('.')){alert('Please enter a valid email address.');return;}
-        if(!carModel){alert('Please enter your car model.');return;}
+      submitBtn.addEventListener('click', () => {
+        const name = nameInput.value.trim();
+        const email = emailInput.value;
+        const carModel = carModelInput.value.trim();
+        if (!name) return alert('Please enter your name.');
+        if (!email.includes('@') || !email.includes('.')) return alert('Please enter a valid email address.');
+        if (!carModel) return alert('Please enter your car model.');
         alert('Thank you! We will contact you soon with your Renault Clio Estate insurance quote.');
       });
-      // Blog Carousel
-      const carousel=document.getElementById('blog-carousel');
-      let scrollAmount=0;
-      setInterval(() => {
-        if(scrollAmount>=carousel.scrollWidth-carousel.clientWidth){scrollAmount=0;}
-        else{scrollAmount+=300;}
-        carousel.scrollTo({left:scrollAmount,behavior:'smooth'});
-      },3000);
+
+      // Manual Carousel (Optional: Comment out if auto-scroll not needed)
+      let scrollAmount = 0;
+      setTimeout(() => {
+        setInterval(() => {
+          if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) scrollAmount = 0;
+          else scrollAmount += 300;
+          carousel.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        }, 3000);
+      }, 1000); // Delay carousel to reduce initial TBT
     });
   </script>
 </body>
