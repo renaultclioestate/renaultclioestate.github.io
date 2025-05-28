@@ -1,26 +1,30 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable car insurance for Renault Clio Estate in France. Compare quotes for third-party, intermediate, and comprehensive coverage.">
+  <meta name="description" content="Affordable car insurance for Renault Clio Estate in France. Compare third-party, intermediate, and comprehensive quotes.">
   <meta name="keywords" content="Renault Clio Estate, car insurance France, Renault car insurance, cheap car insurance France, third-party insurance, comprehensive insurance">
   <meta name="author" content="Your Blog Name">
   <meta name="robots" content="index, follow">
+  <meta name="canonical" content="https://yourwebsite.com">
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Car Insurance for Renault Clio Estate in France">
-  <meta property="og:description" content="Get tailored car insurance for your Renault Clio Estate in France. Compare affordable quotes and save today!">
-  <meta property="og:image" content="https://example.com/renault-clio-estate-logo.png">
+  <meta property="og:description" content="Get tailored car insurance for your Renault Clio Estate in France. Compare affordable quotes and save!">
+  <meta property="og:image" content="https://yourwebsite.com/images/renault-clio-estate-logo.png">
   <meta property="og:url" content="https://yourwebsite.com">
   <meta property="og:type" content="website">
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Car Insurance for Renault Clio Estate in France">
   <meta name="twitter:description" content="Find the best car insurance for your Renault Clio Estate in France. Affordable rates and comprehensive coverage.">
-  <meta name="twitter:image" content="https://example.com/renault-clio-estate-logo.png">
+  <meta name="twitter:image" content="https://yourwebsite.com/images/renault-clio-estate-logo.png">
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" as="image">
+  <link rel="dns-prefetch" href="https://www.acommeassure.fr">
+  <link rel="dns-prefetch" href="https://www.service-public.fr">
   <title>Car Insurance for Renault Clio Estate in France</title>
-  <link rel="icon" type="image/png" href="https://example.com/favicon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="https://yourwebsite.com/favicon.png">
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
@@ -29,7 +33,7 @@
     "name": "France Car Insurance",
     "description": "Specialized car insurance for Renault Clio Estate in France, offering third-party, intermediate, and comprehensive coverage.",
     "url": "https://yourwebsite.com",
-    "logo": "https://example.com/renault-clio-estate-logo.png",
+    "logo": "https://yourwebsite.com/images/renault-clio-estate-logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "info@yourwebsite.com",
@@ -46,52 +50,204 @@
     ]
   }
   </script>
+  <style>
+    :root {
+      --renault-blue: #003087;
+      --renault-yellow: #FFC107;
+      --white: #FFFFFF;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--white);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .header {
+      background-color: var(--renault-blue);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header img {
+      width: 48px;
+      height: 48px;
+    }
+    .header h1 {
+      font-size: 1.5rem;
+      color: var(--white);
+    }
+    .header nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .header nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .header nav a:hover {
+      color: var(--renault-yellow);
+    }
+    .hero {
+      background: linear-gradient(45deg, var(--renault-blue), #0052cc);
+      padding: 4rem 0;
+      text-align: center;
+      color: var(--white);
+      min-height: 400px;
+      animation: slideBackground 10s infinite alternate;
+    }
+    @keyframes slideBackground {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .hero img {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      background-color: var(--renault-yellow);
+      color: var(--renault-blue);
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #e0a800;
+    }
+    .card {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      min-height: 150px;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .form-input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 0.25rem;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: var(--renault-blue);
+      box-shadow: 0 0 5px rgba(0,48,135,0.3);
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .carousel-item {
+      flex: 0 0 300px;
+      scroll-snap-align: start;
+    }
+    footer {
+      background-color: var(--renault-blue);
+      color: var(--white);
+      padding: 1rem 0;
+      text-align: center;
+    }
+    footer a {
+      color: var(--renault-yellow);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (min-width: 768px) {
+      .grid-cols-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+      .grid-cols-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
   <!-- Header -->
-  <header class="bg-blue-600 text-white py-4">
-    <div class="container mx-auto px-4 flex justify-between items-center">
+  <header class="header">
+    <div class="container flex justify-between items-center">
       <div class="flex items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" alt="Renault Clio Estate Logo" class="h-12 mr-4">
-        <h1 class="text-2xl font-bold">France Car Insurance</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" alt="Renault Clio Estate Logo" width="48" height="48">
+        <h1>France Car Insurance</h1>
       </div>
       <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#home" class="hover:underline">Home</a></li>
-          <li><a href="#insurance" class="hover:underline">Insurance</a></li>
-          <li><a href="#categories" class="hover:underline">Categories</a></li>
-          <li><a href="#blog" class="hover:underline">Blog</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#insurance" class="nav-link">Insurance</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-blue-100 py-16 text-center">
-    <div class="container mx-auto px-4">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" alt="Renault Clio Estate Car Insurance" class="h-24 mx-auto mb-4">
-      <h2 class="text-4xl font-bold mb-4">Car Insurance for Your Renault Clio Estate</h2>
-      <p class="text-lg mb-6">Get affordable and tailored car insurance for your Renault Clio Estate in France. Compare quotes for third-party, intermediate, and comprehensive plans!</p>
-      <a href="#contact" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Get a Quote</a>
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Renault_2020_logo.svg" alt="Renault Clio Estate Car Insurance" width="96" height="96" loading="eager">
+      <h2>Car Insurance for Your Renault Clio Estate</h2>
+      <p>Discover tailored insurance for your Renault Clio Estate in France. Compare quotes and save today!</p>
+      <a href="#contact" class="btn">Get a Quote</a>
     </div>
   </section>
 
   <!-- Insurance Details Section -->
   <section id="insurance" class="py-16">
-    <div class="container mx-auto px-4">
+    <div class="container">
       <h2 class="text-3xl font-bold mb-6 text-center">Why Choose Us for Renault Clio Estate Insurance?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Affordable Rates</h3>
+      <div class="grid-cols-3">
+        <div class="card">
+          <h3>Affordable Rates</h3>
           <p>Find competitive insurance quotes starting from as low as €13.73/month for your Renault Clio Estate.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Comprehensive Coverage</h3>
+        <div class="card">
+          <h3>Comprehensive Coverage</h3>
           <p>Protect your Renault Clio Estate with coverage for accidents, theft, fire, and third-party liabilities.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">English-Speaking Support</h3>
+        <div class="card">
+          <h3>English-Speaking Support</h3>
           <p>Enjoy personalized support in English, perfect for expats in France.</p>
         </div>
       </div>
@@ -99,75 +255,131 @@
   </section>
 
   <!-- Insurance Categories Section -->
-  <section id="categories" class="bg-gray-200 py-16">
-    <div class="container mx-auto px-4">
+  <section id="categories" class="py-16 bg-gray-100">
+    <div class="container">
       <h2 class="text-3xl font-bold mb-6 text-center">Car Insurance Categories for Renault Clio Estate</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Third-Party Insurance (Responsabilité Civile)</h3>
-          <p>Mandatory in France, this covers damages to others caused by your Renault Clio Estate. Ideal for budget-conscious drivers.</p>
+      <div class="grid-cols-3">
+        <div class="card">
+          <h3>Third-Party Insurance</h3>
+          <p>Mandatory in France, covers damages to others caused by your Renault Clio Estate.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Intermediate Insurance (Tiers Plus)</h3>
-          <p>Includes third-party coverage plus protection against theft, fire, and glass damage for your Renault Clio Estate.</p>
+        <div class="card">
+          <h3>Intermediate Insurance</h3>
+          <p>Includes third-party coverage plus theft, fire, and glass damage protection.</p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Comprehensive Insurance (Tous Risques)</h3>
-          <p>Full coverage for your Renault Clio Estate, including accidents, vandalism, and natural disasters.</p>
+        <div class="card">
+          <h3>Comprehensive Insurance</h3>
+          <p>Full coverage for your Renault Clio Estate, including accidents and vandalism.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Blog Section -->
-  <section id="blog" class="bg-gray-200 py-16">
-    <div class="container mx-auto px-4">
+  <section id="blog" class="py-16 bg-gray-200">
+    <div class="container">
       <h2 class="text-3xl font-bold mb-6 text-center">Blog: Tips for Renault Clio Estate Owners</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">How to Save on Renault Clio Estate Insurance</h3>
-          <p>Learn tips to reduce your insurance premiums, including maintaining a clean driving record and choosing the right coverage for your Renault Clio Estate.</p>
-          <a href="#blog" class="text-blue-600 hover:underline">Read More</a>
+      <div id="blog-carousel" class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <h3>How to Save on Renault Clio Estate Insurance</h3>
+            <p>Learn tips to reduce premiums for your Renault Clio Estate, including safe driving discounts.</p>
+            <a href="#blog" class="text-blue-600 hover:underline">Read More</a>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-          <h3 class="text-xl font-semibold mb-2">Understanding Car Insurance in France</h3>
-          <p>Discover the basics of car insurance in France, including mandatory third-party liability and optional comprehensive plans for your Renault Clio Estate.</p>
-          <a href="#blog" class="text-blue-600 hover:underline">Read More</a>
+        <div class="carousel-item">
+          <div class="card">
+            <h3>Understanding Car Insurance in France</h3>
+            <p>Discover mandatory and optional insurance plans for your Renault Clio Estate in France.</p>
+            <a href="#blog" class="text-blue-600 hover:underline">Read More</a>
+          </div>
         </div>
       </div>
-      <p class="text-center mt-6">Check out our <a href="https://www.acommeassure.fr/" class="text-blue-600 hover:underline" target="_blank">partner resources</a> for more insurance tips.</p>
+      <p class="text-center mt-6">Explore more at <a href="https://www.acommeassure.fr/" target="_blank">Acomme Assure</a>.</p>
     </div>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "France Car Insurance Blog",
+      "description": "Tips and guides for Renault Clio Estate owners seeking car insurance in France.",
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "How to Save on Renault Clio Estate Insurance",
+          "description": "Learn tips to reduce premiums for your Renault Clio Estate, including safe driving discounts.",
+          "url": "https://yourwebsite.com/blog/save-on-renault-clio-estate-insurance"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Understanding Car Insurance in France",
+          "description": "Discover mandatory and optional insurance plans for your Renault Clio Estate in France.",
+          "url": "https://yourwebsite.com/blog/understanding-car-insurance-france"
+        }
+      ]
+    }
+    </script>
   </section>
 
   <!-- Contact Form Section -->
   <section id="contact" class="py-16">
-    <div class="container mx-auto px-4">
+    <div class="container">
       <h2 class="text-3xl font-bold mb-6 text-center">Get Your Free Renault Clio Estate Insurance Quote</h2>
       <div class="max-w-lg mx-auto bg-white p-6 rounded shadow">
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-          <input type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" placeholder="Your Name">
+          <input type="text" id="name" class="form-input" placeholder="Your Name">
         </div>
         <div class="mt-4">
           <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" placeholder="Your Email">
+          <input type="email" id="email" class="form-input" placeholder="Your Email">
         </div>
         <div class="mt-4">
           <label for="car-model" class="block text-sm font-medium text-gray-700">Car Model</label>
-          <input type="text" id="car-model" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" placeholder="e.g., Renault Clio Estate" value="Renault Clio Estate">
+          <input type="text" id="car-model" class="form-input" placeholder="e.g., Renault Clio Estate" value="Renault Clio Estate">
         </div>
         <div class="mt-6">
-          <button onclick="alert('Thank you! We will contact you soon.')" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
+          <button id="submit-btn" class="btn w-full">Submit</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-4">
-    <div class="container mx-auto px-4 text-center">
-      <p>© 2025 France Car Insurance. All rights reserved. | <a href="https://www.service-public.fr/particuliers/vosdroits/F3044" class="hover:underline" target="_blank">Learn about French insurance regulations</a></p>
+  <footer>
+    <div class="container">
+      <p>© 2025 France Car Insurance. All rights reserved. | <a href="https://www.service-public.fr/particuliers/vosdroits/F3044" target="_blank">French Insurance Regulations</a></p>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded',() => {
+      // Smooth Scroll
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click',e => {
+          e.preventDefault();
+          document.getElementById(link.getAttribute('href').substring(1)).scrollIntoView({behavior:'smooth'});
+        });
+      });
+      // Form Validation
+      document.getElementById('submit-btn').addEventListener('click',() => {
+        const name=document.getElementById('name').value.trim();
+        const email=document.getElementById('email').value;
+        const carModel=document.getElementById('car-model').value.trim();
+        if(!name){alert('Please enter your name.');return;}
+        if(!email.includes('@')||!email.includes('.')){alert('Please enter a valid email address.');return;}
+        if(!carModel){alert('Please enter your car model.');return;}
+        alert('Thank you! We will contact you soon with your Renault Clio Estate insurance quote.');
+      });
+      // Blog Carousel
+      const carousel=document.getElementById('blog-carousel');
+      let scrollAmount=0;
+      setInterval(() => {
+        if(scrollAmount>=carousel.scrollWidth-carousel.clientWidth){scrollAmount=0;}
+        else{scrollAmount+=300;}
+        carousel.scrollTo({left:scrollAmount,behavior:'smooth'});
+      },3000);
+    });
+  </script>
 </body>
 </html>
